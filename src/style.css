@@ -1,0 +1,68 @@
+body{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-style: normal;
+}
+.header{
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.title-heading a{
+text-decoration: none;
+}
+.title-heading{
+    display: flex;
+}
+.navig{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+}
+.navig ul{
+    display: flex;
+    list-style-type: none;
+
+}
+.navig ul li{
+    margin: 20px;
+}
+.navig a{
+    text-decoration: none;
+}
+.homebody{
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    justify-content:  space-between;
+}
+.homedesc{
+    padding: 100px;
+    margin-left: 100px;
+    width: 380px;
+    display: block;  
+}
+.homeimage{
+    height: 200px;
+    margin-right: 100px;
+}
+.projectsbody{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+.resumebody{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+.contactmebody{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
