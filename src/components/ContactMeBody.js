@@ -1,4 +1,4 @@
-const ContactMe = () => {
+const ResumeContact = () => {
     
     return (
         <div className="contactmebody">
@@ -6,4 +6,4 @@ const ContactMe = () => {
         </div>
     );
 };
-export default ContactMe;
+export default ResumeContact;

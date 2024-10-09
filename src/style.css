@@ -1,4 +1,6 @@
 body{
+    color: aliceblue;
+    background-color: #3f3f3f;
     margin-left: 200px;
     margin-right: 200px;
     font-family: "Montserrat Alternates", sans-serif;
@@ -16,7 +18,37 @@ text-decoration: none;
 }
 .title-heading{
     display: flex;
+    background: linear-gradient(
+        to right,
+        #fff648 20%,
+        #ff8417 30%,
+        #ffde37 70%,
+        #ff9e2f 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
 }
+
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+
+
+
+
 .navig{
     display: flex;
     justify-content: space-between;
@@ -32,37 +64,122 @@ text-decoration: none;
     margin: 20px;
 }
 .navig a{
+    color: aliceblue;
     text-decoration: none;
 }
-.homebody{
+
+
+
+
+
+
+.aboutbody {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    display: flex;
     margin: 20px;
-    padding: 10px;
-    justify-content:  space-between;
+    padding: 20px; 
 }
-.homedesc{
-    padding: 100px;
-    margin-left: 100px;
-    width: 380px;
-    display: block;  
+
+.aboutdesc {
+    padding: 20px; 
+    margin-right: 20px; 
+    width: 380px; 
 }
-.homeimage{
+
+.aboutdesc p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.aboutimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutimage {
     height: 200px;
-    margin-right: 100px;
+    border-radius: 10px;
+    max-width: 100%;
 }
+
+
+
+
+
+
+
+
+
 .projectsbody{
-    display: flex;
     margin: 20px;
     padding: 10px;
 }
-.resumebody{
-    display: flex;
-    margin: 20px;
-    padding: 10px;
+.projectsbody p{
+    font-weight: 300;
+    font-size: x-large;
+    text-align: center;
 }
+.projectsbody h3{
+    text-align: center;
+}
+.projhead{
+    text-align: center;   
+}
+.devimage{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 250px;
+}
+.cardsholder {
+    display: flex;
+    justify-content: center;
+}
+.project-cards{
+    flex-wrap: wrap;
+    display: flex;
+    width: 1000px;
+    overflow: hidden;
+    content: wrap;
+}
+.card{
+    background-color: #7b7b7b;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card p{
+    text-align: center;
+}
+.card:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 .contactmebody{
     display: flex;
     margin: 20px;
     padding: 10px;
 }
+
+
+
+
+
+
+
+.active-link {
+    border-bottom: 2px solid rgb(255, 255, 255); 
+    padding-bottom: 5px;
+  }
+.inactive-link {
+    opacity: 0.5;
+  }

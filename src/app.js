@@ -2,14 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import HomeBody from "./components/HomeBody";
-import ContactMe from "./components/ContactMeBody";
-import Resume from "./components/ResumeBody";
+import ResumeContact from "./components/ContactMeBody";
+import About from "./components/About";
 import Projects from "./components/ProjectsBody";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Layout = () => {
-  return(<div classname="app">
+  return(<div className="app">
     <Header />
     <Outlet />
   </div>);
@@ -21,19 +20,15 @@ const appRouter = createBrowserRouter([
       element:<Layout/>,
       children : [
         {
-          path:"/home",
-          element:<HomeBody/>
+          path:"/about",
+          element:<About/>
         },
         {
-          path:"/contact",
-          element:<ContactMe/>
+          path:"/resumecontact",
+          element:<ResumeContact/>
         },
         {
-          path:"/resume",
-          element:<Resume/>
-        },
-        {
-          path:"/projects",
+          path:"/",
           element:<Projects/>
         }
       ]
