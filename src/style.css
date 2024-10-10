@@ -137,23 +137,53 @@ text-decoration: none;
 .cardsholder {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
-.project-cards{
+
+.project-cards {
+    margin-top: 5%;
+    margin-bottom: 20%;
     flex-wrap: wrap;
     display: flex;
-    width: 1000px;
-    overflow: hidden;
-    content: wrap;
+    max-width: 1000px;
+    justify-content: center;
+    gap: 5%;
 }
-.card{
+
+.card {
     background-color: #7b7b7b;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
-.card p{
+
+.card p {
     text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
 }
-.card:hover{
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+.card-icons {
+    display: block;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card-icons:hover {
+    transform: scale(1.1); 
     cursor: pointer;
 }
 
@@ -163,15 +193,39 @@ text-decoration: none;
 
 
 
-
 .contactmebody{
     display: flex;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
     padding: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
 }
+.emaillink{
+    font-size: x-large;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 
-
-
+}
+.emaillink:hover{
+    cursor: pointer;
+}
+.conticons img{
+    height: 40px;
+    margin: 10px;
+}
+.conticons img:hover{
+    cursor: pointer;
+}
+.resumeimage{
+    margin-top: 1%;
+    width: 70%;
+}
+.resumeimage:hover{
+    cursor: pointer;
+}
 
 
 
@@ -182,4 +236,10 @@ text-decoration: none;
   }
 .inactive-link {
     opacity: 0.5;
-  }
+
+}
+
+
+
+
+
