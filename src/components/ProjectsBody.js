@@ -3,6 +3,8 @@ import food from "../utils/foodcat.png"
 import catfact from "../utils/catfact.png"
 import load from "../utils/loading.png"
 import Link from "react-router-dom";
+import chat from "../utils/chat.png"
+import resumeats from "../utils/resumeats.png"
 const Projects = () => {
     
     return (
@@ -16,6 +18,18 @@ const Projects = () => {
             </h3>
             <div className="cardsholder">
             <div className="project-cards">
+
+                <div className="card" 
+                 onClick={() => window.open('https://anonchat-mocha.vercel.app/')}>
+                <img className="card-icons" src={chat}/>                
+                    <p>Anonymmous Chat Web App</p>
+                </div>
+
+                <div className="card" 
+                 onClick={() => window.open('https://resume-ats-zeta.vercel.app/')}>
+                <img className="card-icons" src={resumeats}/>                
+                    <p>AI Powered Resume ATS Scorer</p>
+                </div>
 
                 <div className="card" 
                  onClick={() => window.open('https://github.com/arpitaggarwal0511/Food-Delivery-app')}>
