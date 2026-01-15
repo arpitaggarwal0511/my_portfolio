@@ -37,7 +37,7 @@ export default function ProjectsPage() {
         "An ATS resume parser built in Python with scoring and actionable feedback.",
       github: "https://github.com/arpitaggarwal0511/resumeATS",
       live: "https://resume-ats-zeta.vercel.app/",
-      image: "/images/resumeATS.png",
+      image: "/images/pccat.png",
     },
     {
       name: "Random Cat Fact Generator",
