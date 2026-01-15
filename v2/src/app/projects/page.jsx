@@ -29,7 +29,7 @@ export default function ProjectsPage() {
         "A real-time anonymous chat application built with TypeScript and WebSockets.",
       github: "https://github.com/arpitaggarwal0511/anonchat",
       live: "https://anonchat-mocha.vercel.app/",
-      image: "/images/chat.png",
+      image: "/images/callcat.png",
     },
     {
       name: "AI Based Resume Parser and Scorer",
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
         "An ATS resume parser built in Python with scoring and actionable feedback.",
       github: "https://github.com/arpitaggarwal0511/resumeATS",
       live: "https://resume-ats-zeta.vercel.app/",
-      image: "/images/pccat.png",
+      image: "/images/resumeats.png",
     },
     {
       name: "Random Cat Fact Generator",

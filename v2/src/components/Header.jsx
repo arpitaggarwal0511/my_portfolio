@@ -7,7 +7,6 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
 
-  // ESC key closes menu
   useEffect(() => {
     const onKeyDown = (e) => {
       if (e.key === "Escape") setOpen(false);
@@ -16,7 +15,6 @@ export default function Header() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  // Outside click / tap (mobile safe)
   useEffect(() => {
     const onPointerDown = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -45,7 +43,6 @@ export default function Header() {
           Arpit Aggarwal
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 text-sm tracking-wide">
           {navLinks.map(({ label, href }) => (
             <Link
@@ -58,7 +55,6 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile Menu Button (ALWAYS "Menu") */}
         <button
           onClick={(e) => {
             e.stopPropagation();
@@ -66,13 +62,16 @@ export default function Header() {
           }}
           aria-label="Open navigation menu"
           aria-expanded={open}
-          className="md:hidden text-sm opacity-80 hover:opacity-100"
+          className="md:hidden flex flex-col justify-center gap-1.5 p-2 rounded-md
+             opacity-80 hover:opacity-100 transition"
         >
-          Menu
+          <span className="block w-6 h-[2px] bg-white"></span>
+          <span className="block w-6 h-[2px] bg-white"></span>
+          <span className="block w-6 h-[2px] bg-white"></span>
         </button>
+
       </div>
 
-      {/* Overlay */}
       {open && (
         <div
           className="fixed inset-0 z-40 bg-black/40 md:hidden"
@@ -80,7 +79,6 @@ export default function Header() {
         />
       )}
 
-      {/* Mobile Menu */}
       {open && (
         <nav
           ref={menuRef}
